@@ -1,3 +1,4 @@
 import sys
-for i in sys.argv:
-    print(i)
+print(len(sys.argv[1::]))
+print(*sys.argv[1::])
+
