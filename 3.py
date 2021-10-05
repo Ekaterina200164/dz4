@@ -26,12 +26,10 @@ if '-a' in sys.argv:
         fib1 = fib2 = 1
         fib.append(1)
         fib.append(1)
-        print(fib1, fib2, end = ' ')
         for i in range(2, int(sys.argv[1])):
             fib1, fib2 = fib2, fib1 + fib2
-            print(fib2, end = ' ')
             fib.append(fib2)
-        print()
+        print(*fib)
 
 if '-f' in sys.argv:
     answ3 = Path('answ3.txt')
